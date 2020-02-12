@@ -1,0 +1,70 @@
+<html>
+	<head>
+		<title>Form Demo</title>
+	</head>
+	<body>
+		<form action="" method="get" enctype="text/plain">
+			<table>
+				<tr>
+					<td>Name</td><td><input type="text" placeholder="Enter the username" name="uname" maxlength="32"></td>
+				</tr>
+				<tr>
+					<td>Password</td><td><input type="password" placeholder="Enter the password" name="pwd" maxlength="32"  required="required"></td>
+				</tr>
+				<tr>
+					<td>Email</td><td><input type="email" name="email" placeholder="Enter the email address"  ></td>
+				</tr>
+				<tr>
+					<td>Phone No</td><td><input type="number" name="phoneno" placeholder="Enter the Phone No" ></td>
+				</tr>
+				<tr>
+					<td>Gender</td>
+					<td>
+						
+						<input type="radio" id="male" name="gender" value="male" ><label for="male">Male</label>	
+						<input type="radio" id="femal" name="gender" value="femal" ><label for="femal">Female</label>
+					</td>
+				</tr>
+				<tr>
+					<td>Semester</td>
+					<td>
+						<select name="semester">
+							<optgroup label="Group1" disable="disable">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							</optgroup disable="disable">
+							<optgroup label="Group2">
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+							</optgroup>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Hobbies</td>
+					<td>
+						<input type="checkbox" name="hobbies" value="Gamming" checked>Gamming &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="hobbies" value="Programming" checked="checked">Programming
+					</td>
+				</tr>
+				<tr>
+					<td>Upload file</td>
+					<td><input type="file" name="file"></td>
+				</tr>
+				<tr>
+					<td>Address</td>
+					<td><textarea placeholder="Enter the Address" rows="5" cols="22"></textarea></td>
+				</tr>
+				<tr>
+					<td><input type="submit" value="Submit"></td>
+					<td><input type="reset" value="Reset"></td>
+				</tr>
+			</table>		
+		</form>
+	</body>
+</html>

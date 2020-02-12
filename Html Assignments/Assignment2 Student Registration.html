@@ -1,0 +1,145 @@
+<html>
+	<head>
+		<title>Student Registration</title>
+	</head>
+<body>
+	<form action="" method="get">
+		<table cellspacing="20" align="center"> 
+	
+			<tr>
+				<td colspan="2"><h1>Student Registration Form</h1></td>
+			</tr>
+	
+			<tr>
+				<td>Student Name :</td>
+				<td><input type="text" name="name" placeholder="Enter the full name"/></td>
+			</tr>
+	
+			<tr>
+				<td>Phone No. :</td>
+				<td><input type="number" name="phonenoForStudent" placeholder="+91 . . . . . . . . . . . ." /></td>
+			</tr>
+	
+			<tr>
+				<td>Email address:</td>
+				<td><input type="email" name="emailforStudent" placeholder="example@gmail.com" /></td>
+			</tr>
+	
+			<tr>
+				<td>Parents Phone No. :</td>
+				<td><input type="number" name="phonenoForParents" placeholder="+91 . . . . . . . . . . . ."/></td>
+			</tr>
+	
+			<tr>
+				<td>Parents Email address:</td>
+				<td><input type="email" name="emailforParents" placeholder="example@gmail.com"></td>
+			</tr>
+	
+			<tr>
+				<td>Branch:</td>
+				<td>
+					<select name="branch">
+						<option value="">Select Branch</option>
+						<option value="Computer Enginnering">Computer Enginnering</option>
+						<option value="Information Technology">Information Technology</option>
+						<option value="Mechanical Engineering">Mechanical Engineering</option>
+						<option value="Chemical Enginnering">Chemical Enginnering</option>
+						<option value="Electrical Engineering">Electrical Engineering</option>
+						<option value="Electronics & Communication">Electronics & Communication</option>
+						<option value="Bio Technology">Bio Technology</option>
+						<option value="Civil Enginnering">Civil Enginnering</option>
+						<option value="Nano Technology">Nano Technology</option>
+					</select>
+				</td>
+			</tr>
+	
+			<tr>
+				<td>Last Semester SPI:</td>
+				<td><input type="number" name="spi" placeholder="Enter the SPI" required="required"></td>
+			</tr>
+
+			<tr>
+				<td><h4>Activites:</h4></td>
+				<td>
+					1. Seminar Presentation<br/>
+					<input type="checkbox" name="seminar" value="Winner" id="seminar"/><label for ="seminar">Winner</label> &nbsp;&nbsp;&nbsp;
+					<input type="number" name="rankinseminar" placeholder="Enter the rank"/>
+					
+					<br/><br/>
+					
+					2. Programming Skills<br/>
+					<input type="checkbox" name="programming" value="Winner" id ="programming" /><label for ="programming">Winner</label> &nbsp;&nbsp;&nbsp;
+					<input type="number" name="rankinprogramming" placeholder="Enter the rank"/>
+
+					<br/><br/>
+					
+					3. Attendance<br/>
+					<input type="checkbox" name="attendance" value="Winner" id="attendance"/><label for ="attendance">Winner</label> &nbsp;&nbsp;&nbsp;
+					<input type="number" name="rankinattendance" placeholder="Enter the rank"/>
+				
+					<br/><br/>
+					
+					4. Viva Exams<br/>
+					<input type="checkbox" name="viva" value="Winner" id="viva" /><label for ="viva">Winner</label> &nbsp;&nbsp;&nbsp;
+					<input type="number" name="rankinviva" placeholder="Enter the rank"/>
+				
+					<br/><br/>
+					
+					5. Mid Semester Exam<br/>
+					<input type="checkbox" name="mid" value="Winner" id="mid"/><label for="mid">Winner</label> &nbsp;&nbsp;&nbsp;
+					<input type="number" name="rankinmid" placeholder="Enter the rank"/>
+				</td>
+			</tr>
+	
+			<tr>
+				<td>Last Semester CPI:</td>
+				<td><input type="number" name="cpi" placeholder="Enter the CPI" required="required"></td>
+			</tr>
+	
+			<tr>
+				<td>Semester:</td>
+				<td>
+					<select name="sem">
+						<option value="">Select Semester</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+					</select>
+				</td>
+			</tr>
+	
+			<tr>
+				<td>Local Address:</td>
+				<td><textarea rows="5" cols="25" name="localaddress" placeholder="Enter the Local Address"></textarea></td>
+			</tr>
+	
+			<tr>
+				<td>Gender:</td>
+				<td>
+					<input type="radio" name="gender" value="male" id="male" /><label for="male">Male</label> &nbsp;&nbsp;&nbsp;<input type="radio" name="gender" value="femal" id="femal"><label for="femal">Femal</label>
+				</td>
+			</tr>
+	
+			<tr>
+				<td>Parents Name:</td>
+				<td><input type="text" name="parentsname"/></td>
+			</tr>
+	
+			<tr>
+				<td>Permanent Address:</td>
+				<td><textarea rows="5" cols="25"  name="permanentaddress" placeholder="Enter the Permanent Address"></textarea></td>
+			</tr>
+	
+			<tr>
+				<td></td>
+				<td><input type="submit" name="submit" value="Submit" /></td>
+			</tr>
+		</table>
+	</form>	
+</body>
+</html>

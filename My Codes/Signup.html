@@ -1,0 +1,56 @@
+<html>
+	<head>
+		<title>Sign Up</title>
+		<style>
+			body{
+			background-color: #efefef;
+			}
+		</style>
+	</head>
+	<body>
+	<fieldset>
+		<legend>Sign Up Form</legend>
+		<form action="" method="get">
+			Name:<br/>
+			<input type="text" name="username" placeholder="Enter the  Name" size="32"/><br/><br/>
+			Password:<br/>
+			<input type="password" name="pwd" placeholder="Enter the  Password" size="32" required="required"/>	
+			<br/><br/>
+			Semester:
+			<br/>
+			<select>
+				<option name="sem" value="*">Select Semester</option>
+				<option name="sem" value="1">1</option>
+				<option name="sem" value="2">2</option>
+				<option name="sem" value="3">3</option>
+				<option name="sem" value="4">4</option>
+				<option name="sem" value="5">5</option>
+				<option name="sem" value="6">6</option>
+				<option name="sem" value="7">7</option>				
+				<option name="sem" value="8">8</option>
+			</select>
+			<br/><br/>
+			Phone No.:<br/>
+			<input type="number" name="phoneno" size="32" placeholder="Enter the Phone Number"/><br/><br/>
+			
+			Email:<br/>
+			<input type="email" name="email" size="32" placeholder="Enter the Email Address"/>
+			<br/><br/>
+
+			Gender:<br/>
+			<input type="radio" name="gender" value="male"/>Male<br/>
+			<input type="radio" name="gender" value="femal"/>Femal<br/><br/>
+
+			Hobbies:<br/>
+			<input type="checkbox" name="hobbies" value="sport">Sport<br/>
+			<input type="checkbox" name="hobbies" value="dancing">Dancing<br/>
+			<input type="checkbox" name="hobbies" value="Singing">Siging<br/><br/>
+
+			Address:<br/>
+			<textarea rows="5" cols="32" placeholder="Enter the Home Address"></textarea>
+			<br/><br/>
+			<input type="submit" value="Sign Up"/>
+		</form>
+	</fieldset>
+	</body>
+</html>

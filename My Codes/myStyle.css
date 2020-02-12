@@ -1,0 +1,6 @@
+.child1,.child2{
+	background-color: red;
+	height: 100px;
+	width: 100px;
+	display: fixed;
+}

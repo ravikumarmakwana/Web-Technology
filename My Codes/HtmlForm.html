@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<title>Form</title>
+	</head>
+	<body>
+		<fieldset>
+			<legend>File Form</legend>
+			<table align="center">
+			<form action="" method="get">
+				<tr><td>Name</td><td><input type="text" name="username" placeholder="Enter the Name" maxlength="10"/></td></tr>
+				<tr><td>Password</td><td><input type="password" name="pwd"/></td></tr>
+				<tr><td>Email</td><td><input type="email" name="email"/></td></tr>
+				<tr><td>Phone No</td><td><input type="number" name="phoneno"/></td></tr>
+				<tr><td>Semester</td>
+				<td>
+					<select name="sem">
+						<option value="*">Select Semester</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+					</select>
+				</td>
+				</tr>
+				
+				<tr>
+				<td>Gender</td>
+				<td><input type="radio" name="gender" id="male" value="male" checked="checked"/><label for="male">Male</label>&nbsp;&nbsp;&nbsp;<input type="radio" name="gender" value="femal" id="femal"/><label for="femal">Femal</label></td>
+				</tr>
+
+				<tr>
+				<td>Hobbies</td>
+				<td><input type="checkbox" name="reading"  value="Reading"/>Reading &nbsp;&nbsp;&nbsp;<input type="checkbox" name="dancinig" value="dancing" />Dancind</td>
+				</tr>
+
+				
+				<tr>
+					<td>Address</td>
+					<td><textarea rows="5" cols="25" placeholder="Enter the Address" name="address"></textarea></td>
+				</tr>
+				<tr><td>Upload File</td><td><input type="file"/></td></tr>
+				<tr><td>Upload Image</td><td><input type="image" value="Choose image"/></td></tr>
+				<tr><td><input type="reset" value="Reset"/></td><td><input type="submit" value="Submit"/></td></tr>
+			</form>
+			</table>
+		</fieldset>
+	</body>
+</html>

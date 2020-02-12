@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Object & Function</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function Person(firstName,lastName,age)
+		{
+			this.firstName=firstName;
+			this.lastName=lastName;
+			this.age=age;
+		}
+		function show()
+		{
+			document.write(this.firstName+" : "+this.lastName+" : "+this.age);
+		}
+		var p=new Person("Makwana","Ravi",19);
+		p.show();
+	</script>
+</body>
+</html>

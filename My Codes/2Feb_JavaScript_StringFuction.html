@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>String Fuction</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var str="Hello World";
+		document.write(str+"<br/>");
+		document.write(str.length+"<br/>");
+		document.write(str.toUpperCase()+"<br/>");
+		document.write(str.toLowerCase()+"<br/>");
+		var str1="I am Ravi !! ";
+		var res=str.concat("&",str1);
+		document.write(res+"<br/>");
+		var c=str1.charAt(5);
+		document.write(c+"<br/>");
+		document.write(str1.indexOf("Ravi")+"<br/>");
+		document.write(str1.search("Ravi")+"<br/>");
+		var array=str1.split(" ");
+		document.write(array[2]+"<br/>");
+		var str2="Hello Hello";
+		document.write(str2.replace("H","Hi")+"<br/>");
+		document.write(str1.length+" : " +str1.lastIndexOf("!")+"<br/>");
+		document.write(str.slice(-8)+"<br/>");
+		document.write(str1.substr(5,4)+"<br/>");
+		document.write(str1.substring(5,9)+"<br/>");
+	</script>
+	<!-- 
+		1. length
+		2. toUpperCase()
+		3. toLowerCase()
+		4. concat()
+		5. indexOf()
+		6. charAt()
+		7. search()
+		8. split()
+		9. substr()
+		10. substring()
+		11. lastIndexOf()
+		12. slice()
+		13. replace()
+	-->
+</body>
+</html>

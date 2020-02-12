@@ -1,0 +1,40 @@
+div{
+	background-color: #efefef;
+	border-radius:30px;
+	margin:10px;
+}
+#header{
+	height: 100px;
+}
+#logo{
+	height: 80px;
+	width: 80px;
+	display: inline-block;
+	background-color: pink;
+}
+#left,#main,#right{
+	display: inline-block;
+}
+#pageList{
+	display: inline-block;
+	background-color: pink;
+	height: 80px;
+	width: 80px;
+	float: right;
+}
+#left{
+	height: 400px;
+	width: 100px;
+	float: left;
+}
+#main{
+	height:400px;
+	width:1000px;
+}
+#right{
+	height:400px;
+	width:169px;
+}
+#footer{
+	height: 100px;
+}

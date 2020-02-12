@@ -1,0 +1,12 @@
+h1{
+	font-size: 120%;
+	font-style: normal;
+}
+p{
+	font-family: arial;
+	font-weight: bold;
+	background-color: yellow;
+}
+body{
+	background-image: url("Tree.jpg");
+}

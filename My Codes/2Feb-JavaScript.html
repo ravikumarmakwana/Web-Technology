@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Java Script Array Demo</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var studentName=["One","Two","Three","Four"];
+		document.write(studentName+"<br/>");
+		document.write(studentName.join("*")+"<br/>");
+		var popElement=studentName.pop();
+		document.write(popElement+"<br/>");
+		document.write("Final array after remove last Element : "+studentName+"<br/>");
+		document.write("Length of array after add new Element :"+studentName.push("Four")+"<br/>");
+		document.write("Final array after add last Element : "+studentName+"<br/>");
+		var firstElement=studentName.shift()
+		document.write("First Element of Array : "+firstElement+"<br/>");
+		document.write("Final Array : "+studentName+"<br/>");
+		document.write(studentName.unshift("One")+"<br/>");
+		document.write("Final Array : "+studentName+"<br/>");
+		document.write(studentName.unshift("Zero")+"<br/>");
+		document.write("Final Array : "+studentName+"<br/>");
+		studentName.splice(1,0,"Zero1","Zero2","Zero3");
+		document.write(studentName+"<br/>");
+		var newStudent=studentName.slice(4);
+		document.write(newStudent+"<br/>");
+		studentName.sort();
+		document.write("Sorting : "+studentName+"<br/>");
+		studentName.reverse();
+		document.write("Reverse array : "+studentName+"<br/>");
+		var Hi="hi ! ! !";
+		var Hello="Hello ! ! !";
+		var Bye="Bye ! ! !";
+		var Hi_Hello_Bye=Hi.concat(Hello,Bye);
+		document.write(Hi_Hello_Bye+"<br/>");
+	</script>
+	<!-- 
+		1. toString()
+		2. join()
+		3. push()
+		4. pop()
+		5. shift()
+		6. unshift()
+		7. splice()
+		8. slice()
+		9. sort()
+		10. reverse()
+		11. concat()
+	-->
+</body>
+</html>
