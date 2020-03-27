@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Password Show and Hide</title>
+</head>
+	<body>
+	<form name="form">
+		<input type="text" name="uname"/><br/>
+		<input type="password" name="pwd" id="id1"/>
+		<input type="checkbox" onclick="demo()" />Show & Hide
+	</form>
+	<script type="text/javascript">
+		var value1=document.getElementById("id1").value;
+		function demo()
+		{
+			if(document.getElementById("id1").type=== "password")
+				document.getElementById("id1").type= "text";
+			else
+				document.getElementById("id1").type="password";
+		}
+	</script>
+	</body>
+</html>

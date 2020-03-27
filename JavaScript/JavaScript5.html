@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Print Odd Position Characters</title>
+</head>
+<body>
+	<form name="form" onsubmit="demo()">
+		<input type="text" name="text" placeholder="Please enter the some text" />
+		<br/><br/>
+		<input type="submit" name="submit"/>
+	</form>
+	<script type="text/javascript">
+		function demo() {
+			var text=document.form.text.value;
+			for(var i=0;i<text.length;i++)
+			{
+				if(i%2==0)
+					document.write(text.charAt(i));
+			}
+		}
+	</script>
+</body>
+</html>

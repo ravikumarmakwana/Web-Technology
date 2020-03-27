@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="products.xsl" ?>
+<products>
+	<product>
+		<pname>Apple</pname>
+		<pdesc>It is Food</pdesc>
+		<stock>100</stock>
+		<price>40</price>
+	</product>
+	<product>
+		<pname>Banna</pname>
+		<pdesc>It is Food</pdesc>
+		<stock>101</stock>
+		<price>60</price>
+	</product>
+	<product>
+		<pname>Mi k20</pname>
+		<pdesc>It is Smart Android Phone</pdesc>
+		<stock>100</stock>
+		<price>19000</price>
+	</product>
+	<product>
+		<pname>Redmi 5</pname>
+		<pdesc>It is Smart Android Phone</pdesc>
+		<stock>10</stock>
+		<price>8000</price>
+	</product>
+	<product>
+		<pname>Redmi 5 pro</pname>
+		<pdesc>It is Smart Android Phone</pdesc>
+		<stock>100</stock>
+		<price>10000</price>
+	</product>
+	<product>
+		<pname>Google plex 3</pname>
+		<pdesc>It is develop by Google</pdesc>
+		<stock>100</stock>
+		<price>80000</price>
+	</product>
+	<product>
+		<pname>Apple</pname>
+		<pdesc>It is Food</pdesc>
+		<stock>100</stock>
+		<price>40</price>
+	</product>
+	<product>
+		<pname>Apple</pname>
+		<pdesc>It is Food</pdesc>
+		<stock>100</stock>
+		<price>40</price>
+	</product>
+</products>

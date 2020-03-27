@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Regular Expression</title>
+</head>
+<body>
+	<form name="form" onsubmit="demo()">
+		<input type="text" name="username" placeholder="Please enter the name"/><br/>
+		<input type="password" name="pwd" placeholder="Please enter the password"/><br/>
+		<input type="text" name="email" placeholder="Please enter the email"/><br/>
+		<input type="number" name="phoneno" placeholder="Please enter the phoneno"/><br/>
+		<input type="submit" name="submit"/>
+	</form>
+	<script type="text/javascript">
+		function demo() {
+			var username=document.form.username.value;
+			var pwd=document.form.pwd.value;
+			var email=document.form.email.value;
+			var phoneNo=document.form.phoneno.value;
+
+			var regexForUsername=/^[a-zA-Z]+$/;
+			var regexForPassword=/^[a-zA-Z0-9]*[@#$^]+[a-zA-Z0-9@#$^]*$/;
+			var regexForEmail=/^[a-zA-Z0-9]+[a-zA-Z0-9._-]*\@[a-zA-Z0-9]+\.[a-zA-Z0-9.-_]*$/;
+			var regexForPhoneNo=/^[9|8]\d{9}$/;
+
+			if(regexForUsername.test(username))
+				alert("Yes");
+			else
+				alert("No");
+
+			if(regexForPassword.test(pwd))
+				alert("Yes");
+			else
+				alert("No");
+
+			if(regexForEmail.test(email))
+				alert("Yes");
+			else
+				alert("No");
+
+			if(regexForPhoneNo.test(phoneNo))
+				alert("Yes");
+			else
+				alert("No");
+		}
+	</script>
+</body>
+</html>

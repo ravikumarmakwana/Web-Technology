@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demo</title>
+</head>
+<body>
+	<form onsubmit="demo()" name="form">
+		<input type="text" name="name"/><br/>
+		<input type="password" name="pwd"/><br/>
+		<input type="submit" name="submit"/>
+	</form>
+	<script type="text/javascript">
+		function demo() {
+			var name=document.form.name.value;
+			var pwd=document.form.pwd.value;
+
+			var ppwd=/^[0-9]{6,12}$/;
+			var pname=/^[a-zA-Z]+/;
+
+			if(ppwd.test(pwd) && pname.test(name))
+				alert("Ok");
+			else
+				alert("No");
+		}
+	</script>
+</body>
+</html>

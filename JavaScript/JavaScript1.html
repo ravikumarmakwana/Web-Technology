@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fibonicc Serise</title>
+</head>
+<body>
+	<form onsubmit="demo()" name="form">
+		<input type="number" name="no" placeholder="please enter the number" /><br/>
+		<input type="submit" name="submit"/>
+	</form>
+	<script type="text/javascript">
+		function demo() {
+			var n=document.form.no.value;
+			var a=0,b=1,sum=0;
+			document.write(n+" Fibonicc Numbers : ");
+			for(var i=0;i<n;i++)
+			{
+				if(i==0)
+					document.write(a+" ");
+				else if(i==1)
+					document.write(b+" ");
+				else
+				{
+					sum=a+b;
+					document.write(sum+" ");
+					a=b;
+					b=sum;
+				}
+			}
+		}
+	</script>
+</body>
+</html>

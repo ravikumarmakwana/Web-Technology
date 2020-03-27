@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Java Script</title>
+</head>
+<body>
+	<script type="text/javascript">
+		/*
+		var name="Ravi";
+		document.write(name+"<br/>");
+		document.write(name.length+"<br/>");
+		document.write(name.toUpperCase()+"<br/>");
+		document.write(name.toLowerCase()+"<br/>");
+		document.write(name.concat(" Makwana")+"<br/>");
+		document.write(name+"<br/>");
+		document.write(name.charAt(3)+"<br/>");
+		name=name.concat(" Makwana");
+		document.write(name.indexOf("Ravi")+"<br/>");
+		document.write(name.search("vi")+"<br/>");
+		document.write(name+"<br/>");
+		var names=name.split(" ");
+		document.write(names[0]+"<br/>"+names[1]+"<br/>");
+		document.write(name+"<br/>");
+		document.write(name.replace("R","RA")+"<br/>");
+		document.write(name.substr(1,5)+"<br/>");
+		var myArray=new Array();
+		myArray[0]=1;
+		myArray[1]=2.3;
+		myArray[2]="Hello";
+		for(var i=0;i<myArray.length;i++)
+		{
+			document.write(myArray[i]+"<br/>");
+		}
+		document.write("<br/>");
+		document.write(myArray.pop()+"<br/>");
+		for(var i=0;i<myArray.length;i++)
+		{
+			document.write(myArray[i]+" ");
+		}
+		document.write(myArray.toString());
+		document.write("<br/>");
+		document.write(myArray.push("Hello")+" "+myArray);
+		document.write(myArray.unshift("0")+"<br/>");
+		document.write(myArray+"<br/>");
+		myArray.sort();
+		document.write(myArray+"<br/>");
+		myArray.reverse();
+		document.write(myArray+"<br/>");
+		var newArray=myArray.slice(1);
+		document.write(newArray);
+		var alertMag=confirm("Are you sure ?");
+		alert(alertMag);
+	 	var promptValue=prompt("Enter the number",10);
+	 	alert(promptValue);
+
+	 	function add(a,b)
+	 	{
+	 		return a+b;
+	 	}
+	 	document.write(add(1,3)+"<br/>");
+	 	document.write(add(4,4));
+		
+		var toDay=new Date();
+		var user=new Date(prompt("Enter the your Birth Date : "));
+		var birthDate=new Date(toDay.getFullYear(),user.getMonth(),user.getDate());
+		
+		if((toDay.getMonth()==11 && today.getDate()>26) || birthDate<toDay)
+		{
+			birthDate.setFullYear(toDay.getFullYear()+1);
+		}
+		day=(birthDate.getTime()-toDay.getTime())/(1000*60*60*24);
+		document.write("Hello User your Next Birth Day after " +day+" days ! ! !");
+	 	*/
+	 	function person(fname,lname)
+	 	{
+	 		this.fname=fname;
+	 		this.lname=lname;
+	 	}
+	 	var Student ={
+	 		firstname:"Makwana",
+	 		lastName:"Ravi",
+	 		fullName :function()
+	 		{
+	 			return this.firstname+" "+this.lastName;
+	 		}
+	 	}
+	 	document.write(Student.firstname);
+	 	document.write(Student.fullName());
+	 </script>
+</body>
+</html>   

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prime Numbers</title>
+</head>
+<body>
+	<form name="form" onsubmit="demo()">
+		<input type="number" name="no" placeholder="Please enter the number" /><br/><br/>
+		<input type="submit" name="submit"/>
+	</form>
+	<script type="text/javascript">
+		function demo() {
+			var no=document.form.no.value;
+			var i=2,c=0,k=1;
+			document.write("Prime Numbers");
+			document.write("<table border='5'>");
+			document.write("<tr><th>Sr No.</th><th>Prime Numbers</th></tr>");
+			while(k<=no)
+			{
+				c=0;
+				for(var j=2;j<i;j++)
+				{
+					if(i%j==0)
+					{
+						c=1;
+						break;
+					}
+				}
+				if(c==0)
+				{
+					document.write("<tr><td>"+k+"</td>");
+					document.write("<td>"+i+"</td></tr>");
+					k++;
+				}
+				i++;
+			}
+			document.write("</table>");
+		}
+	</script>
+</body>
+</html>

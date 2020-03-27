@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Palindrome String</title>
+</head>
+<body>
+	<form name="form">
+		<input type="text" name="str"/><br/>
+		<input type="submit" name="submit" onclick="demo()"/>
+	</form>
+	<script type="text/javascript">
+		function demo() {
+			var c=1;
+			var str=document.form.str.value;
+			for(var i=0;i<str.length;i++)
+			{
+				if(str.charAt(i)!=str.charAt(str.length-i-1))
+					c=0;
+			}
+			if(c==1)
+				alert("Given String is Palindrome");
+			else
+				alert("Given String is Not Palindrome");
+		}
+	</script>
+</body>
+</html>

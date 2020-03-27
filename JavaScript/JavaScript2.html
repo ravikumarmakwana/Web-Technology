@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Validation</title>
+</head>
+<body>
+	<form action="" method="" name="form">
+		<table>
+			<tr>
+				<td>
+					UserName: 
+				</td>
+				<td>
+					<input type="text" name="username"/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Password: 
+				</td>
+				<td>
+					<input type="password" name="password"/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					BrithDate:
+				</td>
+				<td>
+					<input type="text" name="brithdate"/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Email address:
+				</td>
+				<td>
+					<input type="text" name="email"/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Phone No.:
+				</td>
+				<td>
+					<input type="number" name="phoneno"/>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>
+					<input type="submit" name="submit" value="Sign Up" onclick="validate()"/>
+				</td>
+			</tr>
+		</table>
+	</form>
+	<script type="text/javascript">
+		function validate()
+		{
+			var username=document.form.username.value;
+			var password=document.form.password.value;
+			var phoneNo=document.form.phoneno.value;
+			var email=document.form.email.value; 
+			var birthDate=document.form.birthdate;
+			var msg="";
+
+			//username validation
+			if(!((username.charAt(0)>='a' && username.charAt(0)<='z') || username.charAt(0)>='A' && username.charAt(0)<='Z'))
+				msg="Username not start with _, @, or any number.\n";
+			
+			//password validation
+			var c=0;
+			for(var i=0;i<password.length;i++)
+			{
+				if((password.charAt(i)>='!' && password.charAt(i)<='/')||(password.charAt(i)>=':' && password.charAt(i)<='@'))
+                	c=1;
+			}
+			if(password.length<6 && password.length>12)
+				msg+="Password must have 6 to 12 characters\n";
+			if(c==0)
+				msg+="Password must at least one special symbol\n";
+
+			//email validation
+			var emailpart=email.split('@');
+			if(emailpart.length<2)
+			{
+				msg+="Email must have one @ symbol\n";
+			}
+			else if(emailpart.length==2)
+			{ 
+				if(emailpart[1].search('.')==-1)
+					msg+="Email must have one dot(.) after @\n";
+			}
+			else
+				msg+="Email must have maximum one @ symbol.\n";
+			if(!((email.charAt(0)>='0' && email.charAt(0)<='9')|| (email.charAt(0)>='a' && email.charAt(0)<='z') || (email.charAt(0)>='A' && email.charAt(0)<='Z')))
+				msg+="Email must be start with a-z, A-Z or 0-9\n";
+
+			//phone no validation
+			if(!(phoneNo.charAt(0)=='9' || phoneNo.charAt(0)=='8'))
+				msg+="Phone Number must be start with 9 or 8\n";
+			if(phoneNo.length<9 || phoneNo.length>11)
+				msg+="Phone Number must have maximum 9 to 11 digits\n";
+			
+			if(msg.length==0)
+				alert("Welcome "+username+"\nYour are Successfully Sign Up.");
+			else
+				alert("Opps Somthing Wrong ! ! !\n"+msg+"Please Try Again .");
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Separate Numbers</title>
+</head>
+<body>
+	<form name="form" onsubmit="demo()">
+		<input type="number" name="no" placeholder="Please enter the two digit number"/>
+		<br/>
+		<input type="submit" name="submit"/>
+	</form>
+	<script type="text/javascript">
+		function demo() {
+			var no=document.form.no.value;
+			var a=Math.floor(no%10);
+    		no/=10;
+    		var b=Math.floor(no%10);
+    		var sum=b;
+    		for(var i=1;i<=a;i++)
+    			sum*=b;
+    		document.write(b+" is Multiply with "+a+" Time :: Answer : "+sum);
+		}
+	</script>
+</body>
+</html>

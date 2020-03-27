@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>onFocuse and Onblure</title>
+</head>
+<body>
+	<form onsubmit="demo1()">
+		<input type="text" name="txt1" onfocus="demo2()" onblur="demo3()"/><br/>
+		<input type="text" name="txt2" onfocus="demo2()" onblur="demo3()"/><br/>
+		<input type="text" name="txt3" onfocus="demo2()" onblur="demo3()"/><br/>
+		<input type="text" name="txt4" onfocus="demo2()" onblur="demo3()"/><br/>
+		<input type="submit" name=""/><br/>
+	</form>
+
+	<script type="text/javascript">
+		function demo2() {
+			console.log("onfocus");
+		}
+		function demo3() {
+			console.log("onblur");
+		}
+		function demo1() {
+			alert("onsubmit");
+		}
+	</script>
+</body>
+</html>

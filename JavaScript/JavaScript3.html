@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Next BirthDate</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var toDayDate=new Date();
+		var birthDate=new Date(prompt("Please enter the your Birth Date :" ));
+		birthDate.setFullYear(toDayDate.getFullYear());
+		if(toDayDate.getDate()>=birthDate.getDate() && toDayDate.getMonth()>=birthDate.getMonth())
+			birthDate.setFullYear(birthDate.getFullYear()+1);
+		var day= Math.round((birthDate.getTime() - toDayDate.getTime())/(1000*24*60*60));
+		document.write("Hello User you next Brith after "+day+" days .");
+	</script>
+</body>
+</html>

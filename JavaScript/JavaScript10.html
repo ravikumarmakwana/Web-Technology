@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Button Identification</title>
+</head>
+<body>
+	<div onclick="demo1(event)">Click me ! ! !</div>
+	<form name="form" onsubmit="demo()">
+		<input type="" name=""/><br/>
+		<input type="" name=""/><br/>
+		<input type="" name=""/><br/>
+		<input type="" name=""/><br/>
+		<input type="submit" name="submit"/>
+	</form>
+	<br/>
+	<button onclick="demo2()">Print Hello World</button>
+	<div id="i"></div>
+	<script type="text/javascript">
+		function demo() {
+			alert("Number of element in form : "+document.form.length);
+		}
+		function demo1(event) {
+			if(event.which==1)
+				alert("Left Button");
+			else if(event.which==2)
+				alert("Mouse Wheel");
+			else
+				alert("Right Button");
+		}
+		function demo2() {
+			document.getElementById('i').innerHTML="Hello World";
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<html>
+	<head></head>
+	<body>
+		<script type="text/javascript">
+			var date=prompt("Enter the your Birth Date : ");
+			var dateOfBirth=new Date(date);
+			var day=dateOfBirth.getDate();
+			var month=dateOfBirth.getMonth();
+			var dateOfToday=new Date();
+			document.write(dateOfBirth);
+			
+			document.write((dateOfToday.getTime()-dateOfBirth.getTime())/86400000);
+			
+		</script>
+	</body>
+</html>

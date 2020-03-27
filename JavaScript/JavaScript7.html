@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Identify Characters</title>
+</head>
+<body>
+	<form name="form" onsubmit="demo()">
+		<input type="text" name="text" placeholder="Please enter the text" /><br/><br/>
+		<input type="submit" name="submit"/>
+	</form>
+	<script type="text/javascript">
+		function demo() {
+			var text=document.form.text.value;
+			text=text.toLowerCase();
+			var si=text.indexOf("a");
+			var ei=text.lastIndexOf("a");
+			var ans="";
+			for(var i=si+1;i<ei;i++)
+				ans+=text.charAt(i);
+			document.write("First Index of a at "+(si+1) +" position<br/>");
+			document.write("Last Index of a at "+(ei+1) +" position<br/>");
+			document.write("Between String :: "+ans);
+		}
+	</script>
+</body>
+</html>
